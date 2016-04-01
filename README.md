@@ -19,8 +19,8 @@ You will need the following things properly installed on your computer.
 * change into the new directory
 * `npm install`
 * `bower install`
-* `ember s`
 * `ember install ember-cli-sass`
+* `ember s`
 * `ember g route index`
 * `ember g model "NAME OF MODEL"`
 * `ember install emberfire`
