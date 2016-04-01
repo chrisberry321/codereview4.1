@@ -1,0 +1,14 @@
+{ "questions": [{
+    "submit": "Is the Sun hot?",
+    "author": "Reed Berry",
+    "notes": "It sure looks hot."
+  }, {
+    "submit": "Is the Sun cold?",
+    "author": "Wyatt Berry",
+    "notes": "It does not looks cold."
+  }, {
+    "submit": "Is Mars big?",
+    "author": "Chris Berry",
+    "notes": "It looks super small from my house."
+  }]
+}
