@@ -1,11 +1,11 @@
 <div class="container">
-  {{question.author}} asked {{question.submit}}
+  {{question.author}} asked {{question.submit}} now {{response.answer.submit}}
   <br>
   {{#if isNotesShowing}}
   <p>{{question.notes}} <button class="hide_notes"{{action 'notesHide'}}>hide</button></p>
   {{else}}
   <button class="notes_button"{{action 'notesShow'}}>Notes</button> <br>
   {{/if}}
-  
+
   <button {{action 'delete' question}}>Delete</button>
 </div>
