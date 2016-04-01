@@ -4,13 +4,13 @@
 </div>
 
 <div class="submit container">
-  <input type="text" name="name" value="">
+  {{new-question save2="save3"}}
 </div>
 
 <div class="container">
   <ul>
     {{#each model as |question|}}
-    <li>{{question.submit}} brought to you by {{question.author}}</li>
+    {{question-tile question=question update="update" destroyQuestion="destroyQuestion"}}
     {{/each}}
   </ul>
 </div>

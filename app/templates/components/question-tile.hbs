@@ -1,0 +1,9 @@
+<li>{{question.submit}} brought to you by {{question.author}}
+  {{#if isNotesShowing}}
+  <p>{{question.notes}} <button class="hide_notes"{{action 'notesHide'}}>hide</button></p>
+  {{else}}
+  <button class="notes_button"{{action 'notesShow'}}>Notes</button>
+  {{/if}}
+  {{update-question question=question update="update"}}
+  <button {{action 'delete' question}}>Delete</button>
+</li>
