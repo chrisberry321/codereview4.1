@@ -9,8 +9,15 @@
 
 <div class="container">
   <ul>
-    {{#each model as |question|}}
+    {{#each model.questions as |question|}}
     {{question-tile question=question}}
+    {{/each}}
+  </ul>
+
+  <h2>Resposes</h2>
+  <ul>
+    {{#each model.responses as |response|}}
+    <li>{{response.answer}} By: {{response.author}}</li>
     {{/each}}
   </ul>
 </div>
