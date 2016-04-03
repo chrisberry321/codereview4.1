@@ -5,6 +5,11 @@ export default Ember.Route.extend({
     return this.store.findRecord( 'response', params.response_id);
   },
   actions: {
+    save6(params) {
+      var newResponse = this.store.createRecord('response', params);
+      newResponse.save();
+      this.transitionTo('index');
+    },
     update(response, params) {
      Object.keys(params).forEach(function(key) {
        if(params[key]!==undefined) {

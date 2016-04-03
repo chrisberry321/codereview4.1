@@ -14,7 +14,6 @@ export default Ember.Route.extend({
       newQuestion.save();
       this.transitionTo('index');
     },
-
     save6(params) {
       var newResponse = this.store.createRecord('response', params);
       newResponse.save();
@@ -33,6 +32,5 @@ export default Ember.Route.extend({
       response.save();
       this.transitionTo('index');
     },
-
   }
 });
