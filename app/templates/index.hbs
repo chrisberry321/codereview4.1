@@ -17,7 +17,7 @@
   <h2>Resposes</h2>
   <ul>
     {{#each model.responses as |response|}}
-    <li>{{response.answer}} By: {{response.author}}</li>
+    <li>{{#link-to 'response' answer.id}} By: {{response.author}}</li>
     {{/each}}
   </ul>
 </div>
