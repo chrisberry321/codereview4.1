@@ -1,7 +1,7 @@
 {{#if updateResponseForm}}
   <h4>Update {{response.answer}} creatd by {{response.author}}</h4>
     <div>
-      <form>
+      <form class="update_response">
         <div class="form-group">
           <label for="answer">Answer</label>
           {{input value=answer id="answer" placeholder=response.answer}}
@@ -12,7 +12,7 @@
           {{input value=author id="author" placeholder=response.author}}
         </div>
 
-        <button {{action 'update' response}}>Save</button>
+        <button class="save" {{action 'update' response}}>Save</button>
       </form>
     </div>
 {{else}}

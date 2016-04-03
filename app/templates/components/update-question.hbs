@@ -16,7 +16,7 @@
         <label for="notes">Edit notes?</label>
         {{input value=notes id="notes" placeholder=question.notes}}
       </div>
-      <button type="button" name="button" {{action 'update' question}}>Save Edits</button>
+      <button class="save" type="button" name="button" {{action 'update' question}}>Save Edits</button>
     </form>
   </div>
  {{else}}

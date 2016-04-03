@@ -1,12 +1,13 @@
 .question {
   text-align: center;
 }
-.submit {
+.submit, .update_form {
   margin: 50px;
   display: flex;
   justify-content: center;
   input{
   background-color: oldlace;
+  width: 60vw;
  }
 }
 
@@ -14,5 +15,11 @@
   text-align: center;
   input {
     border-radius: 3px;
+  }
+}
+.update_response, .response_submit {
+  input {
+    background-color: oldlace;
+    width: 60vw;
   }
 }
