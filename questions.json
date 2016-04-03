@@ -10,5 +10,12 @@
     "submit": "Is Mars big?",
     "author": "Chris Berry",
     "notes": "It looks super small from my house."
-  }]
+  }],
+  "responses": [{
+    "answer": "It does take two to tango",
+    "author2": "Plato the Great"
+  }, {
+    "answer": "High fives are way up high",
+    "author2": "Jesus of N"
+    }]
 }

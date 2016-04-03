@@ -9,22 +9,26 @@
 
 <div class="container">
   <ul>
-    {{#each model as |question|}}
-    {{question-tile question=question}}
+    {{#each model.questions as |question|}}
+      {{question-tile question=question}}
     {{/each}}
   </ul>
-<<<<<<< HEAD
 
-  <h2>Resposes</h2>
+
+  <h2>Responses</h2>
   <ul>
     {{#each model.responses as |response|}}
-    <li>{{#link-to 'response' answer.id}} By: {{response.author}}</li>
+      {{response-tile response=response}}
     {{/each}}
   </ul>
-=======
->>>>>>> parent of 11fb96c... Responses appending to index
+<!-- {{new-question save5="save6"}} -->
 </div>
+<br>
 
+
+<br>
+
+<hr>
 <footer class="container">
   {{#link-to 'about'}}About{{/link-to}}
 </footer>
