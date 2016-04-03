@@ -9,10 +9,11 @@
 
 <div class="container">
   <ul>
-    {{#each model.questions as |question|}}
+    {{#each model as |question|}}
     {{question-tile question=question}}
     {{/each}}
   </ul>
+<<<<<<< HEAD
 
   <h2>Resposes</h2>
   <ul>
@@ -20,6 +21,8 @@
     <li>{{#link-to 'response' answer.id}} By: {{response.author}}</li>
     {{/each}}
   </ul>
+=======
+>>>>>>> parent of 11fb96c... Responses appending to index
 </div>
 
 <footer class="container">
