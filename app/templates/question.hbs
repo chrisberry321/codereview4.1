@@ -1,6 +1,13 @@
 <div class="container question.hbs">
-  <h2>More indormation about {{question.author}}'s {{question.submit}}</h2>
+  <h2>Question details</h2>
   {{question-detail question=model destroyQuestion="destroyQuestion"}}
   {{update-question question=model update="update"}}
+  {{response-detail response=model }}
+  {{new-response save5="save6" response=model}}
 
+<!-- <h1> Welcome to {{model.submit}} </h1>
+
+{{question-tile question=model destroyQuestion="destroyQuestion"}}
+
+{{new-question save2="save3" question=model}} -->
 </div>

@@ -1,4 +1,4 @@
-{{#link-to 'question' question.id}}{{question.submit}} brought to you by {{question.author}} now a response by {{response.answer.submit}} {{/link-to}}
+{{#link-to 'question' question.id}}{{question.submit}} brought to you by {{question.author}} {{/link-to}}
 {{#if isNotesShowing}}
 <p>{{question.notes}} <button class="hide_notes"{{action 'notesHide'}}>hide</button></p>
 {{else}}
